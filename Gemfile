@@ -27,6 +27,9 @@ gem 'jbuilder', '~> 2.5'
 
 ## Added Application Gems ##
 gem 'mongoid', '~>6.0'
+# Use Twitter Bootstrap library for front-end UI and layout
+gem 'bootstrap-sass', '3.3.7'
+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
