@@ -18,13 +18,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="/" class="navbar-brand">SCO UC Meeting Schedule</a>
+          <%= link_to "/", class: "navbar-brand" do %>
+            <i class="fa fa-group"></i>
+            SCO UC Meeting Schedule
+          <% end %>
         </div>
         <div class="collapse navbar-collapse" id="main-nav-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="/">Friday, July 21</a></li>
-            <li><a href="/saturday">Saturday, July 22</a></li>
-            <li><a href="/sunday">Sunday, July 23</a></li>
+            <li><%= link_to "Friday, July 21", root_path %></li>
+            <li><%= link_to "Saturday, July 22", saturday_path  %></li>
+            <li><%= link_to "Sunday, July 23", sunday_path %></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div>
